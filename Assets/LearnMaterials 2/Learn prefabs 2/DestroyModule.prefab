@@ -17509,6 +17509,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 745b32e439cf87947b661d5f444f92bc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  destroyDelay: 5.38
+  minimalDestroyingObjectsCount: 0
 --- !u!1 &2991671658594645016
 GameObject:
   m_ObjectHideFlags: 0
