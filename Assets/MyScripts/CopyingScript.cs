@@ -21,6 +21,7 @@ public class CopyingScript : UsingParentScript
         myTransform = GetComponent<Transform>();
     }
 
+    [ContextMenu("Start test")]
     public override void Use()
     {
         for (int i = 0; i < myTransform.childCount; i++)

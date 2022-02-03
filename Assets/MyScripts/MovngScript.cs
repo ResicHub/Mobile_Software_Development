@@ -18,6 +18,7 @@ public class MovngScript : UsingParentScript
         myTransform = GetComponent<Transform>();
     }
 
+    [ContextMenu("Start test")]
     public override void Use()
     {
         isMoving = true;

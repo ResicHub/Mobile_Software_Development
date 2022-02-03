@@ -18,6 +18,7 @@ public class RotationScript : UsingParentScript
         myTransform = GetComponent<Transform>();
     }
 
+    [ContextMenu("Start test")]
     public override void Use()
     {
         isRotating = true;
