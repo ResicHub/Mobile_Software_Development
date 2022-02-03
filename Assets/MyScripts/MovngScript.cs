@@ -36,6 +36,7 @@ public class MovngScript : UsingParentScript
             else
             {
                 isMoving = false;
+                myTransform.position = target.position;
             }
         }
     }

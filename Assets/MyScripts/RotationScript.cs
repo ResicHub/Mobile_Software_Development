@@ -35,6 +35,7 @@ public class RotationScript : UsingParentScript
             else
             {
                 isRotating = false;
+                myTransform.rotation = direction;
             }
         }
     }
