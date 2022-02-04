@@ -9,7 +9,7 @@ public class ObstacleItem : MonoBehaviour
     [SerializeField]
     private float currentValue = 1;
     [SerializeField]
-    private UnityEvent onDestroyObstacle;
+    public UnityEvent onDestroyObstacle;
 
     private void Start()
     {

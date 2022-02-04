@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class InteractiveBox : MonoBehaviour
 {
@@ -20,6 +21,11 @@ public class InteractiveBox : MonoBehaviour
         next = box;
     }
 
+    public void ActivateModule()
+    {
+        GetComponentInChildren<UsingParentScript>().Use();
+    }
+
     private void FixedUpdate()
     {
         if (next)
@@ -29,6 +35,7 @@ public class InteractiveBox : MonoBehaviour
                 Debug.DrawLine(myTransform.position, hit.point, Color.red, 0.3f);
                 if (hit.collider.tag == "Obstacle")
                 {
+                    hit.transform.GetComponent<ObstacleItem>().onDestroyObstacle.AddListener(() => ActivateModule());
                     hit.transform.GetComponent<ObstacleItem>().GetDamage(Time.deltaTime);
                 }
             }
