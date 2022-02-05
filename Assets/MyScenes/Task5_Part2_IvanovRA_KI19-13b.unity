@@ -145,6 +145,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bd7a3c13591b3c247a1cc634dcb60235, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  outlineObject: {fileID: 0}
   target: {fileID: 621091482}
   rotationSpeed: 10
 --- !u!1 &337716977 stripped
@@ -169,6 +170,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9162a44791b85154389ca6dd05fdb976, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  outlineObject: {fileID: 0}
   copyPrefab: {fileID: 6541891456604466642, guid: a63c09504e077d74aa3f63eae23a310d, type: 3}
   copyCount: 3
   interval: 1
@@ -237,7 +239,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 4944e2c33c99f9f46a4796e2e746213e, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -350,7 +352,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 0b4259e9c3c612f418c650249f63e2c1, type: 2}
+  - {fileID: 2100000, guid: f6298605825d7154f8923c76872aa46e, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -417,7 +419,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 543db970d6f3c2747a0937f339e195e7, type: 2}
+  - {fileID: 2100000, guid: 5e148de6cdf2d164aa3e3f90ce8c852c, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -610,7 +612,7 @@ PrefabInstance:
     - target: {fileID: -7511558181221131132, guid: d37ed6b41ffb2344d9284e291c2a9c67, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 543db970d6f3c2747a0937f339e195e7, type: 2}
+      objectReference: {fileID: 2100000, guid: 5e148de6cdf2d164aa3e3f90ce8c852c, type: 2}
     - target: {fileID: 919132149155446097, guid: d37ed6b41ffb2344d9284e291c2a9c67, type: 3}
       propertyPath: m_Name
       value: Arrow
@@ -639,6 +641,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2018ca64a8216dd468aeb3c1a7de2c5a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  outlineObject: {fileID: 0}
   target: {fileID: 815875850}
   movingSpeed: 1
 --- !u!1 &1242703357
@@ -818,7 +821,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 4944e2c33c99f9f46a4796e2e746213e, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1006,7 +1009,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 4944e2c33c99f9f46a4796e2e746213e, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1102,7 +1105,7 @@ PrefabInstance:
     - target: {fileID: -7511558181221131132, guid: d37ed6b41ffb2344d9284e291c2a9c67, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 0b4259e9c3c612f418c650249f63e2c1, type: 2}
+      objectReference: {fileID: 2100000, guid: f6298605825d7154f8923c76872aa46e, type: 2}
     - target: {fileID: 919132149155446097, guid: d37ed6b41ffb2344d9284e291c2a9c67, type: 3}
       propertyPath: m_Name
       value: Arrow
@@ -1187,6 +1190,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d1c20da4de637b84aa93163acfbb7de7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  outlineObject: {fileID: 0}
   target: {fileID: 1242703358}
 --- !u!65 &2024665634
 BoxCollider:
@@ -1220,7 +1224,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: f27fb7d6ec665ce47b097a4e44bb4e08, type: 2}
+  - {fileID: 2100000, guid: 5a26de236ce89e94b963be8fa2b7ade6, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0

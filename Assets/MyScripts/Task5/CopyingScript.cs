@@ -5,6 +5,8 @@ using UnityEngine;
 public class CopyingScript : UsingParentScript
 {
     private Transform myTransform;
+    private bool isHighlighted = false;
+    private Outline outlineScript;
 
     [SerializeField]
     private Transform copyPrefab;
@@ -19,6 +21,7 @@ public class CopyingScript : UsingParentScript
     private void Start()
     {
         myTransform = GetComponent<Transform>();
+        outlineScript = GetComponent<Outline>();
     }
 
     [ContextMenu("Start test")]
@@ -33,6 +36,19 @@ public class CopyingScript : UsingParentScript
         {
             Transform copy = Instantiate(copyPrefab, myTransform.position + myTransform.forward * i * interval, myTransform.rotation).parent = myTransform;
             copy.parent = myTransform;
+        }
+    }
+    public override void Outline()
+    {
+        if (isHighlighted)
+        {
+            outlineScript.OutlineWidth = 0f;
+            isHighlighted = false;
+        }
+        else
+        {
+            outlineScript.OutlineWidth = 10f;
+            isHighlighted = true;
         }
     }
 }

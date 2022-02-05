@@ -5,6 +5,8 @@ using UnityEngine;
 public class KillerScript : UsingParentScript
 {
     private Transform myTransform;
+    private bool isHighlighted = false;
+    private Outline outlineScript;
 
     [SerializeField]
     private Transform target;
@@ -14,12 +16,26 @@ public class KillerScript : UsingParentScript
     private void Start()
     {
         myTransform = GetComponent<Transform>();
+        outlineScript = GetComponent<Outline>();
     }
 
     [ContextMenu("Start test")]
     public override void Use()
     {
         isWorking = true;
+    }
+    public override void Outline()
+    {
+        if (isHighlighted)
+        {
+            outlineScript.OutlineWidth = 0f;
+            isHighlighted = false;
+        }
+        else
+        {
+            outlineScript.OutlineWidth = 10f;
+            isHighlighted = true;
+        }
     }
 
     private void Update()

@@ -5,4 +5,6 @@ using UnityEngine;
 public abstract class UsingParentScript : MonoBehaviour
 {
     public abstract void Use();
+
+    public abstract void Outline();
 }

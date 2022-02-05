@@ -5,6 +5,8 @@ using UnityEngine;
 public class MovngScript : UsingParentScript
 {
     private Transform myTransform;
+    private bool isHighlighted = false;
+    private Outline outlineScript;
 
     [SerializeField]
     private Transform target;
@@ -16,12 +18,26 @@ public class MovngScript : UsingParentScript
     private void Start()
     {
         myTransform = GetComponent<Transform>();
+        outlineScript = GetComponent<Outline>();
     }
 
     [ContextMenu("Start test")]
     public override void Use()
     {
         isMoving = true;
+    }
+    public override void Outline()
+    {
+        if (isHighlighted)
+        {
+            outlineScript.OutlineWidth = 0f;
+            isHighlighted = false;
+        }
+        else
+        {
+            outlineScript.OutlineWidth = 10f;
+            isHighlighted = true;
+        }
     }
 
     private void Update()
