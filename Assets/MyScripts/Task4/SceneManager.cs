@@ -1,0 +1,13 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class SceneManager : MonoBehaviour
+{
+    private void Awake()
+    {
+        Application.LoadLevelAdditive("Part2");
+        Application.LoadLevelAdditive("Part3");
+        Application.LoadLevelAdditive("Part4");
+    }
+}

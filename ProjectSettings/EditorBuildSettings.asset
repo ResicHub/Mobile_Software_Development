@@ -4,5 +4,20 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/MyScenes/Task6_IvanovRA_KI19-13b.unity
+    guid: 5b3f243816883ae46bc3fef693768d21
+  - enabled: 1
+    path: Assets/LearnMaterials 1/Part1.unity
+    guid: d91d476e3495f034ca12fb59e76449c6
+  - enabled: 1
+    path: Assets/LearnMaterials 1/Part2.unity
+    guid: 85be235de0400d8458054f0fb47c5761
+  - enabled: 1
+    path: Assets/LearnMaterials 1/Part3.unity
+    guid: 3eec5757b999a644ead0efc286417e19
+  - enabled: 1
+    path: Assets/LearnMaterials 1/Part4.unity
+    guid: 565031c2091987a46ae6c925b11f4d44
   m_configObjects: {}
